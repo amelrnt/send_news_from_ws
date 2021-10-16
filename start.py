@@ -15,7 +15,7 @@ def getNews(update: Update, context: CallbackContext) -> None:
     t = " ".join(t)
     update.message.reply_text(t)
 
-updater = Updater('2083621450:AAEnmEJEuco9WqfiakULun5JTaIpoJ_Yq2o')
+updater = Updater('MYTOKEN')
 
 updater.dispatcher.add_handler(CommandHandler('news', getNews))
 
